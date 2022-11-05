@@ -412,7 +412,7 @@ void FigureViewer::checkGeometry()
   ctx->functions()->glVertexAttribPointer(0, 4, GL_FLOAT, false, sizeof(vertex), nullptr);
 
   ctx->functions()->glEnableVertexAttribArray(1);
-  ctx->functions()->glVertexAttribPointer(1, 3, GL_FLOAT, false, sizeof(vertex), (const std::byte*) sizeof(QVector4D));
+  ctx->functions()->glVertexAttribPointer(1, 3, GL_FLOAT, false, sizeof(vertex), (const std::byte*) sizeof(QVector4D)+sizeof(QVector3D));
 }
 
 void FigureViewer::loadCubeVbo()
