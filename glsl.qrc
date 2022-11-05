@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.vs.glsl</file>
+        <file>main.fs.glsl</file>
+    </qresource>
+</RCC>
